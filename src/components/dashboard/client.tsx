@@ -120,7 +120,7 @@ export function DashboardClient() {
   
   useEffect(() => {
     if (!loading) {
-        const interval = setInterval(fetchData, 5000);
+        const interval = setInterval(fetchData, 300000);
         return () => clearInterval(interval);
     }
   }, [loading, fetchData]);
